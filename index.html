@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project 20</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      body {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+      }
+      .radio-group {
+        display: flex;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Arfa</li>
+      <li>Banyu</li>
+      <li>Santoro</li>
+      <li>Sangat</li>
+      <li>Tampan</li>
+      <li>Dan</li>
+      <li>Pemberani</li>
+    </ul>
+    <br />
+    <h1>Konfigurasi</h1>
+
+    <table>
+      <tr>
+        <td><label for="item">Teks</label></td>
+        <td><input type="text" name="item" id="item" /></td>
+      </tr>
+      <tr>
+        <td><label>Jumlah</label></td>
+        <td><input type="number" name="num" id="num" /></td>
+      </tr>
+      <tr>
+        <td><button type="button" id="button" onclick="handleSubmit()">Buat</button></td>
+      </tr>
+    </table>
+
+    <br />
+    <h1>Warna Teks</h1>
+    <div class="radio-group">
+      <label><input type="radio" name="color" id="blue" />Biru</label>
+      <label><input type="radio" name="color" id="green" />Hijau</label>
+      <label><input type="radio" name="color" id="yellow" />Kuning</label>
+    </div>
+    <br />
+    <h1>Warna Hover</h1>
+    <div class="radio-group">
+      <label><input type="radio" name="hover" id="red" />Merah</label>
+      <label><input type="radio" name="hover" id="brown" />Coklat</label>
+      <label><input type="radio" name="hover" id="pink" />Pink</label>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
