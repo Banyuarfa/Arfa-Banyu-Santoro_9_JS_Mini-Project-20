@@ -4,22 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Project 20</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-      }
-      body {
-        height: 100vh;
-        display: grid;
-        place-content: center;
-      }
-      .radio-group {
-        display: flex;
-        gap: 1rem;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <ul>
@@ -44,7 +29,11 @@
         <td><input type="number" name="num" id="num" /></td>
       </tr>
       <tr>
-        <td><button type="button" id="button" onclick="handleSubmit()">Buat</button></td>
+        <td>
+          <button type="button" id="button" onclick="handleSubmit()">
+            Buat
+          </button>
+        </td>
       </tr>
     </table>
 
